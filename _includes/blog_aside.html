@@ -1,0 +1,102 @@
+<div class="col-md-4 right">
+	<aside class="right-sidebar">
+
+        <div class="widget">
+            <h5 class="widgetheading">Recent Posts</h5>
+            <ul class="recent">
+                {% for p in site.posts limit:5 %}
+                    <li>
+                        <img class="pull-left" alt="" src="/hrcm/static/media/">
+                        <h6><a href="{{ site.baseurl }}/{{ p.url }}"
+                            >{{ p.title }}</a>
+                        </h6>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="widget">
+            <h5 class="widgetheading">Authors</h5>
+            <ul class="cat">
+                {% for author in site.data.authors %}
+                    {% assign author_posts = site.posts | where: "author", author.user %}
+                    <li><a href="{{ site.baseurl }}/blog/author/{{ author.user }}">
+                        {{ author.name }} ({{ author_posts.size }})
+                    </a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="widget">
+            <h5 class="widgetheading">Archive</h5>
+        
+            <ul class="cat">
+                <li><a href="/blog/archive/2019/3/"
+                    >March</a> (1)</li>
+            </ul>
+
+            <ul class="cat">        
+                <li><a href="/blog/archive/2018/2/"
+                    >February</a> (1)</li>
+
+                <li><a href="/blog/archive/2018/1/"
+                    >January</a> (1)</li>    
+            </ul>
+
+            <ul class="cat">
+                
+                <li><a href="/blog/archive/2017/12/"
+                    >December</a> (1)</li>
+
+                <li><a href="/blog/archive/2017/11/"
+                    >November</a> (1)</li>
+
+                <li><a href="/blog/archive/2017/10/"
+                    >October</a> (1)</li>
+
+                <li><a href="/blog/archive/2017/9/"
+                    >September</a> (1)</li>
+
+                <li><a href="/blog/archive/2017/8/"
+                    >August</a> (1)</li>
+
+                <li><a href="/blog/archive/2017/7/"
+                    >July</a> (1)</li>
+
+                <li><a href="/blog/archive/2017/6/"
+                    >June</a> (1)</li>
+
+                <li><a href="/blog/archive/2017/4/"
+                    >April</a> (3)</li>
+
+                <li><a href="/blog/archive/2017/3/"
+                    >March</a> (1)</li>
+
+                <li><a href="/blog/archive/2017/2/"
+                    >February</a> (2)</li>
+
+                <li><a href="/blog/archive/2017/1/"
+                    >January</a> (1)</li>
+
+            </ul>
+            
+            <ul class="cat">
+            
+                <li><a href="/blog/archive/2016/12/"
+                    >December</a> (3)</li>
+
+                <li><a href="/blog/archive/2016/10/"
+                    >October</a> (1)</li>
+
+            </ul>
+
+        </div>
+
+        <div class="widget">
+            <h5 class="widgetheading">Feeds</h5>
+            <a href="/blog/feeds/rss/">RSS</a> /
+            <a href="/blog/feeds/atom/">Atom</a>
+        </div>
+
+	</aside>
+</div>

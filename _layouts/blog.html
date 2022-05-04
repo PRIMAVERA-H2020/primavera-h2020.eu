@@ -1,0 +1,69 @@
+---
+layout: base_hrcm
+---
+
+<body>
+
+    {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+    {% else %}
+    {% assign posts = site.posts %}
+    {% endif %}
+
+    {% include breadcrumb.html %}
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 middle">
+                    {{ content }}
+                    {%- if posts.size > 0 -%}
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        {%- for post in posts -%}
+                            {% include blog_card.html %}
+                        {%- endfor -%}
+
+                        {% if site.paginate %}
+                        <ul class="pagination">
+                            <li class="page-info">
+                                <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+                            </li>
+                            {%- if paginator.previous_page %}
+                            <li class="prev">
+                                <a href="{{ paginator.previous_page_path | relative_url }}">&larr;</a>
+                            {%- else %}
+                            <li class="prev previous disabled">
+                                <a>&larr;</a>
+                            {%- endif %}
+                            </li>
+                            {% for page in (1..paginator.total_pages) %}
+                                {% if page == paginator.page %}
+                                <li class="active">
+                                {% else %}
+                                <li>
+                                {% endif %}
+                                {% if page == 1 %}
+                                    <a href="{{ site.baseurl }}/blog/">{{ page }}</a>
+                                {% else %}
+                                    <a href="{{ site.baseurl }}/blog/page{{ page }}">{{ page }}</a>
+                                {% endif %}
+                                </li>
+                            {% endfor %}
+                            {%- if paginator.next_page %}
+                            <li class="next">
+                                <a href="{{ paginator.next_page_path | relative_url }}">&rarr;</a>
+                            {%- else %}
+                            <li class="next next disabled">
+                                <a>&rarr;</a>
+                            {%- endif %}
+                            </li>
+                        </ul>
+                        {%- endif %}
+
+                    {%- endif -%}
+                </div>
+                {% include blog_aside.html %}
+            </div>
+        </div>
+    </section>
+
+</body>

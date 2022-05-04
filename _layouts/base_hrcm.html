@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-gb">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google analytics snippet taken from original cayman theme. Can be controlled from 
+            config file -->
+    {% if site.google_tag_manager %}
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NDG2XX7');</script>
+    <!-- End Google Tag Manager -->
+    {% endif %}
+    
+    
+    
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog/feeds/rss/">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="/blog/feeds/atom/">
+    
+    <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/flexslider.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mezzanine.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/skins/default.css">
+
+    <script src="{{ site.baseurl }}/assets/mezzanine/js/jquery-3.4.1.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap-extras.js"></script>
+
+    <!-- Google CSE Search stuff -->
+    <script async src="https://cse.google.com/cse.js?cx=98d9bba52d1334b96"></script>
+    <script src="https://unpkg.com/mustache@4.1.0"></script>
+    <script src="{{ site.baseurl }}/assets/js/result_bootstrap_mustache.js"></script>
+    <script>
+        gcs_results_template = "{{ site.baseurl }}/assets/html/bootstrap_results.html";
+        window.__gcse || (window.__gcse = {});
+        window.__gcse.searchCallbacks = {
+            web: {
+                ready: bootstrapResultsReadyCallback,
+            },
+        };
+    </script>
+
+</head>
+
+<body id="body">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDG2XX7" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {% include navbar.html %}
+    {% if page.skip_banner %}
+        {{ content }}
+    {% else %}
+        {% include banner.html %}
+        <!--footer-->
+        <section class="container">
+            {{ content }}
+        </section>
+    {% endif %}
+
+    <footer>
+        <div class="container">
+            <div class="nav-footer">
+                <ul class="list-unstyled">
+                    <li id="footer-menu-about"><a href="{{ site.baseurl }}/about/">About</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li id="footer-menu-people"><a href="{{ site.baseurl }}/people/">People</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li id="footer-menu-research"><a href="{{ site.baseurl }}/research/">Research</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li id="footer-menu-publications"><a href="{{ site.baseurl }}/publications/">Publications</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li id="footer-menu-data"><a href="{{ site.baseurl }}/data/">Data</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li id="footer-menu-blog"><a href="{{ site.baseurl }}/blog/">Media</a></li>
+                </ul>
+            </div>
+            
+            <div id="sub-footer">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>
+                                <span><strong>Registered users:</strong> access to <strong><a href="http://proj.badc.rl.ac.uk/hrcm/wiki">HRCM Wiki</a></strong>.
+                            </p>
+                            <p>
+                                <span>Template by </span><a target="_blank" href="http://bootstraptaste.com">Bootstraptaste</a>. Mezzanine theme by <a target="_blank" href="http://thecodinghouse.in">CodingHouse</a>.
+                            </p>
+                            <p>
+                                <span>Copyright &copy; High Resolution Global Climate Modelling Group. <a href="http://www.metoffice.gov.uk/about-us/legal">All rights reserved.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="social-network">
+                            <li><a title="" data-placement="top" href="#" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a title="" data-placement="top" href="#" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a title="" data-placement="top" href="#" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a title="" data-placement="top" href="#" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a title="" data-placement="top" href="#" data-original-title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="{{ site.baseurl }}/assets/js/jquery.easing.1.3.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.fancybox.pack.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.fancybox-media.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/portfolio/jquery.quicksand.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/portfolio/setting.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.flexslider.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/animate.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+title: HRCM
+description: A research collaboration between the UK's Met Office and National Centre for Atmospheric Science
+show_excerpts: true
+baseurl: /hrcm-jekyll
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
