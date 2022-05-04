@@ -1,7 +1,7 @@
-title: HRCM
-description: A research collaboration between the UK's Met Office and National Centre for Atmospheric Science
+title: PRIMAVERA
+description: PRIMAVERA is a Horizon 2020 project funded by European Commission. The project is a collaboration between 19 European partners, led by the Met Office and the Reading University in the UK.
 show_excerpts: true
-baseurl: /hrcm-jekyll
+baseurl: /primavera-jekyll
 paginate: 5
 paginate_path: "/blog/page:num/"
 
