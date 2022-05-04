@@ -1,80 +1,67 @@
-<div id="wrapper">
-    <header>
-        <div class="navbar navbar-default navbar-static-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="{{ site.baseurl }}/">HRCM</a>
-                </div> <!--navbar header-->
 
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="" id="dropdown-menu-home"><a href="{{ site.baseurl }}/">Home</a></li>
-                        <li class="" id="about"><a href="{{ site.baseurl }}/about/">About</a></li>
-                        <li class="" id="people"><a href="{{ site.baseurl }}/people/">People</a></li>
-                        <li class="dropdown" id="research"><a href="{{ site.baseurl }}/research/" class="dropdown-toggle disabled" data-toggle="dropdown">Research<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu" id="research-projects"><a href="{{ site.baseurl }}/research/projects/">Projects</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="" id="research-projects-cssp-china"><a href="{{ site.baseurl }}/research/projects/cssp-china/">CSSP-China</a></li>
-                                        <li class="" id="research-projects-higem"><a href="{{ site.baseurl }}/research/projects/higem/">HiGEM</a></li>
-                                        <li class="" id="research-projects-jwcrp"><a href="{{ site.baseurl }}/research/projects/jwcrp/">JWCRP</a></li>
-                                        <li class="" id="research-projects-primavera"><a href="{{ site.baseurl }}/research/projects/primavera/">PRIMAVERA</a></li>
-                                        <li class="" id="research-projects-ujcc"><a href="{{ site.baseurl }}/research/projects/ujcc/">UJCC</a></li>
-                                        <li class="" id="research-projects-upscale"><a href="{{ site.baseurl }}/research/projects/upscale/">UPSCALE</a></li>
-                                        <li class="" id="research-projects-us-clivar"><a href="{{ site.baseurl }}/research/projects/us-clivar/">U.S. CLIVAR</a></li>
-                                        <li class="" id="research-projects-vocals"><a href="{{ site.baseurl }}/research/projects/vocals/">VOCALS</a></li>
-                                        <li class="" id="research-projects-wisc"><a href="{{ site.baseurl }}/research/projects/wisc/">WISC</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu" id="research-research-themes"><a href="{{ site.baseurl }}/research/research-themes/">Research themes</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="" id="research-research-themes-atmosphere-ocean-interactions"><a href="{{ site.baseurl }}/research/research-themes/atmosphere-ocean-interactions/">Atmosphere-ocean interactions</a></li>
-                                        <li class="" id="research-research-themes-dust-and-radiation"><a href="{{ site.baseurl }}/research/research-themes/dust-and-radiation/">Dust and radiation</a></li>
-                                        <li class="" id="research-research-themes-enso"><a href="{{ site.baseurl }}/research/research-themes/enso/">El Niño</a></li>
-                                        <li class="" id="research-research-themes-extratropical-storms"><a href="{{ site.baseurl }}/research/research-themes/extratropical-storms/">Extratropical storms</a></li>
-                                        <li class="" id="research-research-themes-extremes-and-catastrophe-modelling"><a href="{{ site.baseurl }}/research/research-themes/extremes-and-catastrophe-modelling/">Extremes and catastrophe modelling</a></li>
-                                        <li class="" id="research-research-themes-hydrological-cycle"><a href="{{ site.baseurl }}/research/research-themes/hydrological-cycle/">Hydrological cycle</a></li>
-                                        <li class="" id="research-research-themes-land-surface-processes"><a href="{{ site.baseurl }}/research/research-themes/land-surface-processes/">Land surface processes</a></li>
-                                        <li class="" id="research-research-themes-tropical-cyclones"><a href="{{ site.baseurl }}/research/research-themes/tropical-cyclones/">Tropical cyclones</a></li>
-                                        <li class="" id="research-research-themes-tropical-instability-waves"><a href="{{ site.baseurl }}/research/research-themes/tropical-instability-waves/">Tropical instability waves</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu" id="research-cmip6-highresmip"><a href="{{ site.baseurl }}/research/cmip6-highresmip/">CMIP6 HighResMIP</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="" id="research-cmip6-highresmip-cmip6-highresmip-publications"><a href="{{ site.baseurl }}/research/cmip6-highresmip/cmip6-highresmip-publications/">CMIP6 HighResMIP publications</a></li>
-                                        <li class="dropdown-submenu" id="research-cmip6-highresmip-highresmip-protocol"><a href="{{ site.baseurl }}/research/cmip6-highresmip/highresmip-protocol/">HighResMIP protocol</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="" id="research-cmip6-highresmip-highresmip-protocol-sst-and-sea-ice-forcing"><a href="{{ site.baseurl }}/research/cmip6-highresmip/highresmip-protocol/sst-and-sea-ice-forcing/">HighResMIP SST and sea-ice forcing</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="" id="research-cmip6-highresmip-tropical-cyclones"><a href="{{ site.baseurl }}/research/cmip6-highresmip/tropical-cyclones/">Tropical cyclones</a></li>
-                                        <li class="" id="research-cmip6-highresmip-clivar"><a href="{{ site.baseurl }}/research/cmip6-highresmip/clivar/">CLIVAR–PRIMAVERA</a></li>
-                                        <li class="" id="research-cmip6-highresmip-highresmip2"><a href="{{ site.baseurl }}/research/cmip6-highresmip/highresmip2/">HighResMIP2</a></li>
-                                        <li class="" id="research-cmip6-highresmip-highresmip-analyses"><a href="{{ site.baseurl }}/research/cmip6-highresmip/highresmip-analyses/">HighResMIP analyses</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="" id="publications"><a href="{{ site.baseurl }}/publications/">Publications</a></li>
-                        <li class="" id="data"><a href="{{ site.baseurl }}/data/">Data</a></li>
-                        <li class="dropdown" id="blog"><a href="{{ site.baseurl }}/blog/" class="dropdown-toggle disabled" data-toggle="dropdown">Media<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li class="" id="blog-data-visualisations"><a href="{{ site.baseurl }}/blog/data-visualisations/">Data visualisation gallery</a></li>
-                                <li class="" id="blog-ncas-science-highlights"><a href="{{ site.baseurl }}/blog/ncas-science-highlights/">NCAS Science Highlights</a></li>
-                                <li class="" id="blog-press-releases"><a href="{{ site.baseurl }}/blog/press-releases/">Recent press releases</a></li>
-                                <li class="" id="blog-research-blog"><a href="{{ site.baseurl }}/blog/research-blog/">Research blog</a></li>
-                                <li class="" id="blog-web-links"><a href="{{ site.baseurl }}/blog/web-links/">Web links</a></li>
-                            </ul>
-                        </li>
-                        <li class="" id="contact"><a href="{{ site.baseurl }}/contact/">Contact</a></li>
-                    </ul>
-                </div>
+<header>
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{{ site.baseurl }}/" class="navbar-brand" title="PRIMAVERA"><img src="{{ site.baseurl }}/assets/media/uploads/assets/primavera-black.png" style="height: 60px;" /></a>
+<!--  <a class="navbar-brand" href="{{ site.baseurl }}/">PRIMAVERA</a> -->
+<!--			<img style="padding-top: 20px; width: 50%;" src="/static/media/uploads/assets/primavera-black.png" alt="PRIMAVERA">-->
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="" id="dropdown-menu-home"><a href="{{ site.baseurl }}/">Home</a></li>
+                    <li class="dropdown" id="about"><a href="{{ site.baseurl }}/about/" class="dropdown-toggle disabled" data-toggle="dropdown">About<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="" id="about-project"><a href="{{ site.baseurl }}/about/project/">The project</a></li>
+                            <li class="" id="about-research-themes"><a href="{{ site.baseurl }}/about/research-themes/">Research themes</a></li>
+                            <li class="" id="about-objectives"><a href="{{ site.baseurl }}/about/objectives/">Objectives</a></li>
+                            <li class="" id="about-team"><a href="{{ site.baseurl }}/about/team/">People</a></li>
+                            <li class="" id="advisory-board"><a href="{{ site.baseurl }}/advisory-board/">Advisory board</a></li>
+                        </ul>
+                    </li>
+                    <li class="" id="https:--uip.primavera-h2020.eu-"><a href="https://uip.primavera-h2020.eu/">UIP</a></li>
+                    <li class="dropdown" id="modelling"><a href="{{ site.baseurl }}/modelling/" class="dropdown-toggle disabled" data-toggle="dropdown">Modelling<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="" id="modelling-our-models"><a href="{{ site.baseurl }}/modelling/our-models/">Our models</a></li>
+                            <li class="" id="modelling-ensemble-members"><a href="{{ site.baseurl }}/modelling/ensemble-members/">Ensemble Members</a></li>
+                            <li class="" id="modelling-our-simulations"><a href="{{ site.baseurl }}/modelling/our-simulations/">Our simulations</a></li>
+                            <li class="" id="modelling-data-code"><a href="{{ site.baseurl }}/modelling/data-code/">Data access &amp; code</a></li>
+                            <li class="" id="modelling-atmosphere"><a href="{{ site.baseurl }}/modelling/atmosphere/">Atmospheric research</a></li>
+                            <li class="" id="modelling-ocean"><a href="{{ site.baseurl }}/modelling/ocean/">Oceanic research</a></li>
+                            <li class="" id="modelling-sea-ice"><a href="{{ site.baseurl }}/modelling/sea-ice/">Sea-ice research</a></li>
+                            <li class="" id="modelling-tools-and-metrics"><a href="{{ site.baseurl }}/modelling/tools-and-metrics/">Tools and metrics</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="output"><a href="{{ site.baseurl }}/output/" class="dropdown-toggle disabled" data-toggle="dropdown">Output<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="" id="presentations"><a href="{{ site.baseurl }}/presentations/">Presentations</a></li>
+                            <li class="" id="output-scientific-papers"><a href="{{ site.baseurl }}/output/scientific-papers/">Scientific papers and articles</a></li>
+                            <li class="" id="media"><a href="{{ site.baseurl }}/media/">Media</a></li>
+                            <li class="" id="modelling-research-gallery"><a href="{{ site.baseurl }}/modelling/research/gallery/">Gallery</a></li>
+                            <li class="" id="output-project-deliverables"><a href="{{ site.baseurl }}/output/project-deliverables/">Deliverables &amp; milestones</a></li>
+                            <li class="" id="output-outreach-and-collaboration"><a href="{{ site.baseurl }}/output/outreach-and-collaboration/">Outreach and collaboration</a></li>
+                            <li class="" id="output-summary-plots"><a href="{{ site.baseurl }}/output/summary-plots/">Summary Plots</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="events"><a href="{{ site.baseurl }}/events/" class="dropdown-toggle disabled" data-toggle="dropdown">Events<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="" id="general-assembly-1"><a href="{{ site.baseurl }}/events/general-assembly-1/">General Assembly 1 (kick-off meeting)</a></li>
+                            <li class="" id="general-assembly-2"><a href="{{ site.baseurl }}/events/general-assembly-2/">General Assembly 2</a></li>
+                            <li class="" id="general-assembly-3"><a href="{{ site.baseurl }}/events/general-assembly-3/">General Assembly 3 (+ CLIVAR Dynamics Panel)</a></li>
+                            <li class="" id="general-assembly-4"><a href="{{ site.baseurl }}/events/general-assembly-4/">General Assembly 4</a></li>
+                            <li class="" id="conferences-workshops"><a href="{{ site.baseurl }}/events/conferences-workshops/">Conferences &amp; workshops</a></li>
+                            <li class="" id="events-general-assembly-5"><a href="{{ site.baseurl }}/events/general-assembly-5/">General Assembly 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="" id="news"><a href="{{ site.baseurl }}/news/">News</a></li>
+                    <li class="" id="https:--twitter.com-primavera_h2020"><a href="https://twitter.com/primavera_h2020">Twitter</a></li>
+                </ul>
             </div>
         </div>
-    </header>
-</div><!--wrapper-->
+    </div>
+</header>
