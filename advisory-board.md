@@ -20,7 +20,7 @@ title: Advisory board
 <p><strong>Shoshiro Minobe, Hokkaido University, Japan</strong></p>
 <p><a href="https://www.sci.hokudai.ac.jp/~minobe/vitae.html">Shoshiro Minobe's profile</a></p>
 <p><strong>Masahide Kimoto, University of Tokyo, Japan</strong></p>
-<p><a href="https://www.u-tokyo.ac.jp/focus/en/people/people001561.html">Masahide Kimoto</a> has extensive expertise in high resolution climate modelling and process-based assessment, and has played key roles in a number of past IPCC and CMIP programmes.</p>
+<p>Masahide Kimoto has extensive expertise in high resolution climate modelling and process-based assessment, and has played key roles in a number of past IPCC and CMIP programmes.</p>
 <p><strong>Marta Bruno Soares, University of Leeds, U.K.</strong></p>
 <p><a href="https://environment.leeds.ac.uk/see/staff/1182/dr-marta-bruno-soares">Marta Bruno Soares</a> has expertise in end-user needs across different sectors, and works within FP7 EUPORIAS project for climate services.</p>
 <p><strong>Hilppa Gregow, Finnish Meteorological Institute, Finland</strong></p>

@@ -26,8 +26,15 @@ title: Media
 <tr>
 <td>Article</td>
 <td>Horizon EU magazine</td>
-<td>24 Nov 2015</td>
-<td><a href="http://horizon-magazine.eu/article/world-track-catastrophic-warming-forecasters_en.html">Read on Horizon website</a></td>
+<td>24 November 2015</td>
+<td><a href="https://ec.europa.eu/research-and-innovation/en/horizon-magazine/world-track-catastrophic-warming-forecasters">World on track for catastrophic warming – forecasters</a></td>
 </tr>
+<tr>
+<td>Article</td>
+<td>Horizon EU magazine</td>
+<td>22 September 2017</td>
+<td><a href="https://ec.europa.eu/research-and-innovation/en/horizon-magazine/next-generation-models-revealing-climate-change-effect-hurricanes">Next-generation models revealing climate change effect on hurricanes</a></td>
+</tr>
+
 </tbody>
 </table>
