@@ -131,8 +131,7 @@ title: Objectives
 <li>Ensure that the appropriate level of consultation with the External Expert Advisory Board (EEAB) is established and maintained, and that their advice is integrated into the project</li>
 </ul>
 <h4>WP9: HPC and data management</h4>
-<p><img height="200" src="http://www.jasmin.ac.uk/static/media/uploads/panasas_aisle.jpg" style="float: right;" title="JASMIN (image: Stephen Kill, STFC)" width="300"></p>
-<p><em>Lead: Matthew Mizielinski (Met Office, UK)</em><br><em>Co-lead: Ag Stephens (STFC — Science and Technology Facilities Council, UK)</em></p>
+<p><em>Lead: Matthew Mizielinski/David Hein/Jon Seddon (Met Office, UK)</em><br><em>Co-lead: Ag Stephens (STFC — Science and Technology Facilities Council, UK)</em></p>
 <p><strong>Objectives</strong></p>
 <ul>
 <li>Produce a plan for the required HPC to cover the integrations needed by the whole project, on both national and potential PRACE resources</li>
