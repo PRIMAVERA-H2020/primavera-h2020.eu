@@ -101,7 +101,7 @@ Users should branch the `gh-pages` branch, develop their changes on their branch
 
     `git push origin <branch-name>`
 
-1. Create a pull request at GitHub by going to https://github.com/PRIMAVERA-H2020/primavera-jekyll/compare/gh-pages...PRIMAVERA-H2020:primavera-jekyll:main.  Please 
+1. Create a pull request at GitHub by going to https://github.com/PRIMAVERA-H2020/primavera-jekyll/compare/gh-pages...PRIMAVERA-H2020:primavera-jekyll:gh-pages.  Please 
    check very carefully that the repository is PRIMAVERA-H2020/primavera-jekyll 
    (there is also a cedadev/primavera-jekyll repository that we don't want to use), that 
    the base branch is `gh-pages` rather than `main` and then change the compare branch to your `<branch-name>`.
