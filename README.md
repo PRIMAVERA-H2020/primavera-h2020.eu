@@ -42,7 +42,7 @@ It is relatively easy to install Ruby and Jekyll into a Conda environment:
 
     `bundle exec jekyll serve `
 
-    with the site being available from http://127.0.0.1:4000/primavera-jekyll/
+    with the site being available from http://127.0.0.1:4000/
 
 
 ## Editing and publishing changes
@@ -79,7 +79,7 @@ Users should branch the `gh-pages` branch, develop their changes on their branch
 
     `bundle exec jekyll serve `
 
-    with the site being available from http://127.0.0.1:4000/primavera-jekyll/ and pages being re-rendered when changes are saved locally, but F5 will have to be pressed in the browser to reload the changes there. Occasionally, when changes are made to a template then the page may not be re-rendered. In this case Jekyll can be stopped by pressing Ctrl-C and starting it again.
+    with the site being available from http://127.0.0.1:4000/ and pages being re-rendered when changes are saved locally, but F5 will have to be pressed in the browser to reload the changes there. Occasionally, when changes are made to a template then the page may not be re-rendered. In this case Jekyll can be stopped by pressing Ctrl-C and starting it again.
 
 1. When all of the changes have been made locally then check which files have been edited:
 
