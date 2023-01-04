@@ -45,7 +45,7 @@ title: Deliverables & milestones
 </tr>
 <tr>
 <td>D9.1</td>
-<td><a href="{{ site.baseurl }}/assets/media/uploads/Documents/project/primavera_deliverable_9-1.pdf">Data management plan</a> (<a href="https://dx.doi.org/10.5281/ZENODO.3598390">https://dx.doi.org/10.5281/ZENODO.3598390</a>)</td>
+<td><a href="{{ site.baseurl }}/assets/media/uploads/Documents/project/primavera_deliverable_9-1.pdf">Data management plan</a> (DOI <a href="https://doi.org/10.5281/ZENODO.3598390">10.5281/ZENODO.3598390</a>)</td>
 <td>May&nbsp;2016</td>
 <td>9</td>
 <td>Met Office</td>
@@ -377,7 +377,7 @@ title: Deliverables & milestones
 </tr>
 <tr>
 <td>D9.6</td>
-<td><a href="{{ site.baseurl }}/assets/media/uploads/Documents/project/primavera_d9.6_final.pdf">Review of DMP and lesssons learnt for future projects</a></td>
+<td><a href="{{ site.baseurl }}/assets/media/uploads/Documents/project/primavera_d9.6_final.pdf">Review of DMP and lesssons learnt for future projects</a> (DOI <a href="https://doi.org/10.5281/zenodo.3961931">10.5281/zenodo.3961931</a>)</td>
 <td>Jul 2020</td>
 <td>9</td>
 <td>Met Office</td>
@@ -516,7 +516,7 @@ title: Deliverables & milestones
 </tr>
 <tr>
 <td><strong>MS25</strong></td>
-<td>Finalise and agree updated Data Management Plan for Stream 2 simulations <a href="https://doi.org/10.5281/zenodo.3607328">https://doi.org/10.5281/zenodo.3607328</a></td>
+<td>Finalise and agree updated Data Management Plan for Stream 2 simulations (DOI <a href="https://doi.org/10.5281/zenodo.3607328">10.5281/zenodo.3607328</a>)</td>
 <td>30&nbsp;Sep&nbsp;2017</td>
 <td>9</td>
 <td>CNR</td>
