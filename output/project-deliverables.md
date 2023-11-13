@@ -307,7 +307,7 @@ title: Deliverables & milestones
 </tr>
 <tr>
 <td>D9.5</td>
-<td><a href="{{ site.baseurl }}/assets/media/uploads/Documents/project/primavera_deliverable_9-5.pdf">Publication of PRIMAVERA Stream2 data set</a></td>
+<td><a href="{{ site.baseurl }}/assets/media/uploads/Documents/project/primavera_deliverable_9-5.pdf">Publication of PRIMAVERA Stream2 data set</a> (DOI <a href="https://doi.org/10.5281/zenodo.10118150">10.5281/zenodo.10118150</a>)</td>
 <td>May 2020</td>
 <td>9</td>
 <td>Met Office</td>
